@@ -1,4 +1,4 @@
-package com.github.tiagoferrari;
+package com.github.tiagoferrari.exercicio1;
 
 import java.util.Scanner;
 
