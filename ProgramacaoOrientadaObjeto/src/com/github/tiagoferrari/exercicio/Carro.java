@@ -1,3 +1,5 @@
+package com.github.tiagoferrari.exercicio;
+
 public class Carro {
 
     String cor;
