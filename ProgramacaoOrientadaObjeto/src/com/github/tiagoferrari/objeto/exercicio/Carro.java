@@ -1,4 +1,4 @@
-package com.github.tiagoferrari.exercicio;
+package com.github.tiagoferrari.objeto.exercicio;
 
 public class Carro {
 
@@ -44,4 +44,10 @@ public class Carro {
         return valorCombustivel * tanqueCombustivel;
     }
 
+    @Override
+    public String toString() {
+        return  "Cor do carro: " + cor  +
+                "\nModelo: " + modelo +
+                "\nCapacidade tanque de combustível: " + tanqueCombustivel + "L";
+    }
 }
