@@ -1,5 +1,6 @@
 package com.github.tiagoprojects.gof;
 
+import com.github.tiagoprojects.gof.facade.Facade;
 import com.github.tiagoprojects.gof.singleton.SingletonEager;
 import com.github.tiagoprojects.gof.singleton.SingletonLazy;
 import com.github.tiagoprojects.gof.singleton.SingletonLazyHolder;
@@ -8,7 +9,7 @@ import com.github.tiagoprojects.gof.strategy.*;
 public class Teste {
     public static void main(String[] args) {
 
-        //Testes relacionados ao Design Pattern Singleton:
+        //Singleton
 
         SingletonLazy lazy = SingletonLazy.getInstancia();
         System.out.println(lazy);
@@ -25,7 +26,7 @@ public class Teste {
         lazyHolder = SingletonLazyHolder.getInstancia();
         System.out.println(lazyHolder);
 
-        //Testes relacionados ao Design Pattern Strategy:
+        //Strategy
 
         Comportamento normal = new ComportamentoNormal();
         Comportamento defensivo = new ComportamentoDefensivo();
@@ -41,5 +42,11 @@ public class Teste {
         robo.mover();
         robo.mover();
         robo.mover();
+
+        //Facade
+
+        Facade facade = new Facade();
+        facade.migrarCliente("Tiago Ferrari", "15995000");
+
     }
 }
