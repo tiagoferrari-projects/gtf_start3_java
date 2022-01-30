@@ -1,4 +1,4 @@
-package com.github.tiagoprojects.gof;
+package com.github.tiagoprojects.gof.singleton;
 
 /**
  * Singleton"preguiçoso".
